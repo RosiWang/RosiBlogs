@@ -10,10 +10,11 @@
        data(){
            return {
            }
-       }
+       },
+        created(){
+           console.log("startapp created");
+        }
     }
 </script>
-
 <style scoped>
-
 </style>
