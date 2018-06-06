@@ -1,5 +1,11 @@
 <template>
     <div>
+        <div id="slider" class="nivoSlider">
+            <p>
+                测试测试测试888888888888888888
+            </p>
+        </div>
+
         <header>
             <a class="menu-icon">
                 <span></span>
@@ -14,7 +20,13 @@
             </nav>
         </header>
 
-        <section id="home"  >
+        <div id="slider" class="nivoSlider">
+            <img src="source/display0.jpg"/>
+            <img src="source/display.jpg"/>
+            <img src="source/display1.jpg"/>
+        </div>
+
+        <section id="home">
                 <div class="overlay">
                     <h1>Rosi Blogs</h1>
                     <h2>UI / UX / Frontend</h2>
@@ -60,7 +72,8 @@
                     <p
                             data-900="opacity:0;"
                             data-1300="opacity:1;"
-                    >A selection of recent projects I've been working on: landing pages, websites, email marketing...</p>
+                    >A selection of recent projects I've been working
+                        on: landing pages, websites, email marketing...</p>
                 </div>
                 <div class="col empty">&nbsp;</div>
             </div>
@@ -172,19 +185,48 @@
                        <br> Email : rosiwang@163.com <br>
                     </p>
                 </div>
-
             </div>
         </footer>
-
     </div>
     </div>
 
 </template>
 
 <script>
+    import $ from 'jquery'
+
+
     export default {
         name: ""
     }
+    // $(window).load(function () {
+    //     $('#slider').nivoSlider();
+    // });
+    /*import '/static/juquery/canvas-particle'
+    import '/static/juquery/jquery-1.6.1.min'
+    import '/static/juquery/jquery.nivo.slider'
+    import '/static/juquery/jquery.nivo.slider.pack'*/
+
+    window.onload = function() {
+        //配置
+        var config = {
+            vx: 4,	//小球x轴速度,正为右，负为左
+            vy: 4,	//小球y轴速度
+            height: 2,	//小球高宽，其实为正方形，所以不宜太大
+            width: 2,
+            count: 200,		//点个数
+            color: "121, 162, 185", 	//点颜色
+            stroke: "130,255,255", 		//线条颜色
+            dist: 6000, 	//点吸附距离
+            e_dist: 20000, 	//鼠标吸附加速距离
+            max_conn: 20 	//点到点最大连接数
+        }
+        console.log("window lonload8866");
+        //调用
+      // CanvasParticle(config);
+    };
+    console.log("jquery test",$);
+
 </script>
 <style scoped>
     @import "/static/style/main.css";

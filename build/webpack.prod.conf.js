@@ -10,6 +10,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+const ProvidePlugin = new webpack.ProvidePlugin({//引入外部类库
+    $: 'jquery',
+    jQuery: 'jquery',
+});
 
 const env = process.env.NODE_ENV === 'testing'
   ? require('../config/test.env')
@@ -31,6 +35,7 @@ const webpackConfig = merge(baseWebpackConfig, {
   },
   plugins: [
     // http://vuejs.github.io/vue-loader/en/workflow/production.html
+      ProvidePlugin,
     new webpack.DefinePlugin({
       'process.env': env
     }),
