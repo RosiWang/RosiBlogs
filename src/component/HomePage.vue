@@ -20,11 +20,11 @@
             </nav>
         </header>
 
-        <div id="slider" class="nivoSlider">
-            <img src="source/display0.jpg"/>
-            <img src="source/display.jpg"/>
-            <img src="source/display1.jpg"/>
-        </div>
+        <!--<div id="slider" class="nivoSlider">-->
+            <!--<img src="source/display0.jpg"/>-->
+            <!--<img src="source/display.jpg"/>-->
+            <!--<img src="source/display1.jpg"/>-->
+        <!--</div>-->
 
         <section id="home">
                 <div class="overlay">
