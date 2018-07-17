@@ -1,22 +1,6 @@
 <template>
     <div>
-        <!--<header>-->
-            <!---->
-        <!--</header>-->
 
-        <!--<div id="slider" class="nivoSlider">-->
-            <!--<img src="source/display0.jpg"/>-->
-            <!--<img src="source/display.jpg"/>-->
-            <!--<img src="source/display1.jpg"/>-->
-        <!--</div>-->
-
-        <!--<section id="home">-->
-                <!--<div class="overlay">-->
-                    <!--<h1>Rosi Blogs</h1>-->
-                    <!--<h2>UI / UX / Frontend</h2>-->
-                    <!--<a href="#" target="_blank" class="but">Download Resume</a>-->
-                <!--</div>-->
-        <!--</section>-->
         <img style="width: 100%;height: 500px" src="static/img/header-bg.jpg"/>
 
         <!--about me-->
@@ -35,7 +19,6 @@
                         I like me.</p>
                     <a href="#" class="but">Get in touch</a>
                 </div>
-
             </div>
         </section>
 
