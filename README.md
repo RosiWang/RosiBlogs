@@ -38,7 +38,7 @@
 ```
 git clone https://github.com/RosiWang/RosiBlogs
 ```
-进入项目目录VueBlog后，安装依赖
+进入项目目录RosiBlogs后，安装依赖
 ```
 npm install
 ```
@@ -57,57 +57,9 @@ npm run dev
 ### 注意
 - 账户： boss    密码： 123456
 - 配置： 请将server/app.js和/server/api/comment.js里面的xxx@qq.com改为自己的邮箱，来测试邮箱通知功能
-- 邮箱通知功能，已经为大家注册了一个公用126邮箱去发送邮件，如果频繁发送邮件到一固定邮箱，则会被当成垃圾邮件被系统拦截。如果需要频繁发送邮件测试，可以在接收邮箱中设置邮箱白名单，也可以在接收邮箱中添加公用的126邮箱为联系人。
 - 登录界面在：最底下的——‘站长登录’
 
-### 效果展示
-#### 前台效果
 
-首页
-
-![主页](https://segmentfault.com/img/bVMKxp?w=1344&h=646)
-
-博客所有文章
-
-![博客文章](https://segmentfault.com/img/bVNEvk?w=1346&h=645)
-
-最近更新
-
-![最近更新](https://segmentfault.com/img/bVNEeZ?w=1345&h=644)
-
-某一篇文章
-
-![文章](https://segmentfault.com/img/bVNEvl?w=1347&h=635)
-
-留言
-
-![留言](https://segmentfault.com/img/bVMKyu?w=1339&h=642)
-
-评论
-
-![评论](https://segmentfault.com/img/bVNEgl?w=1343&h=645)
-
-#### 后台效果
-
-所有文章
-
-![所有文章](https://segmentfault.com/img/bVNEvp?w=1366&h=644)
-
-搜索文章
-
-![搜索](https://segmentfault.com/img/bVNEvo?w=1366&h=644)
-
- 修改账户
-
-![修改账户](https://segmentfault.com/img/bVNEiV?w=1366&h=638)
-
-markdown编辑器
-
-![编辑器](https://segmentfault.com/img/bVNEiK?w=1366&h=643)
-
-移动端演示
-
-![移动端](https://segmentfault.com/img/remote/1460000009411216?w=318&h=568)
 ### 目录
 ```
 │  .babelrc             babel配置
@@ -159,9 +111,9 @@ markdown编辑器
 
 
 ### TODO
-- 添加服务器配置教程
-- 简化webpack配置
-- 添加代码规范。BEM + JsDoc
+- 修改界面样式、结构
+- 数据库数据调整
+- 细节完善
 - 重构代码
 
 
