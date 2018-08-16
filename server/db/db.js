@@ -9,7 +9,7 @@ const UserSchema = new Schema(
     {
     name: String,
     password: String,
-    salt: String            // 使用csprng随机生成的盐
+    salt: String
     },
     { versionKey: false }
 )
@@ -64,6 +64,7 @@ const Models = {
 const initialize = () => {
     console.log('beginning to initialize data...')
     Models.User.find({}, (err, doc) => {
+      console.log('find:',err,doc.length);
         if (err) {
             console.log(err)
             console.log('initialize failed')
@@ -80,13 +81,13 @@ const initialize = () => {
     })
 }
 
-mongoose.connect('mongodb://127.0.0.1/my-blog')
+mongoose.connect('mongodb://127.0.0.1/my-blog',{ useMongoClient: true })
 
 const db = mongoose.connection
 
 db.on('error',console.error.bind(console,'Database connection error.'));
 db.once('open', () => {
-    console.log('The database has connected.')
+    console.log('Rosi,The database has connected.')
     initialize()
 });
 

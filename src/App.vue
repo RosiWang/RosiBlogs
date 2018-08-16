@@ -27,11 +27,12 @@ export default {
         ...mapState(['isLoading', 'dialog'])
     },
     methods: {
-        changeTitle () {            // 切换标签页后，改变title
+        changeTitle () {
+          // 切换标签页后，改变title
             if (document.hidden) {
-                document.title = '去吧，皮卡丘！'
+                document.title = '去吧，等你！'
             } else {
-                document.title = '欢迎回来'
+                document.title = '欢迎回来^_^'
             }
         }
     }

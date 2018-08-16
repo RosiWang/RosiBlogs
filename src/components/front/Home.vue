@@ -51,7 +51,9 @@ export default {
             content: 'Welcome to my blog',
             animation: 'animated bounceIn'
         })
-        this.getAllArticles({page: 1, limit: 3})
+        this.getAllArticles({page: 1, limit: 3});
+        console.log('home created',this.reducedArticles.length);
+
     },
     computed: {
         ...mapGetters(['reducedArticles'])
@@ -228,4 +230,5 @@ p.headline {
         width: 100% !important;
     }
 }
+
 </style>
