@@ -27,13 +27,16 @@ export default {
         }
     },
     mounted () {
-        window.addEventListener('scroll', this.handleScroll)
+        window.addEventListener('scroll', this.handleScroll);
+      console.log('article::',this.articleList);
+
     },
     beforeDestroy () {
         window.removeEventListener('scroll', this.handleScroll)
     },
     computed: {
         ...mapGetters(['articleList'])
+
     },
     methods: {
         handleScroll () {

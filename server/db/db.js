@@ -64,10 +64,10 @@ const Models = {
 const initialize = () => {
     console.log('beginning to initialize data...')
     Models.User.find({}, (err, doc) => {
-      console.log('find:',err,doc.length);
+      console.log('find:',err,doc.length,doc);
         if (err) {
             console.log(err)
-            console.log('initialize failed')
+            console.log('initialize failed ' )
         } else if (!doc.length) {
             const salt = rand(160, 36)
             // 第一次创建站长账户

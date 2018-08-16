@@ -88,6 +88,7 @@ export default {
                 this.content = ''
                 this.address = ''
                 this.sendFlag = false
+              notify('我已将信件转送小主，稍后回复您^_^');
             }).catch(() => {
                 this.sendFlag = false
                 this.set_dialog({

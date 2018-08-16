@@ -24,7 +24,7 @@ app.post('/api/mail', (req, res) => {
     <a href="https://www.xxx.cn" style="text-decoration: none; background: lightgreen;color: #fff; height: 2rem; line-height: 2rem; padding: 0 1rem; display: inline-block; border-radius: 0.2rem;">回到博客</a>
     </div>
     `
-    mail.send('rosiwang@163.com', '您的博客有一条新留言', content, res)
+    mail.send('rosiwang@126.com', '您的博客有一条新留言', content, res)
     res.status(200).send('send email successfully')
 })
 
