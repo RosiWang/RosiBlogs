@@ -55,7 +55,7 @@ npm run start
 npm run dev
 ```
 ### 注意
-- 账户： boss    密码： 123456
+- 账户： Rosi    密码： 123456
 - 配置： 请将server/app.js和/server/api/comment.js里面的xxx@qq.com改为自己的邮箱，来测试邮箱通知功能
 - 登录界面在：最底下的——‘站长登录’
 
