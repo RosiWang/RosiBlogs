@@ -3,8 +3,8 @@
         <a href="https://segmentfault.com/u/rosiwang" class="iconfont icon-iconsf"></a>
         <a class="iconfont icon-github" href="https://github.com/RosiWang/RosiBlogs"></a>
         <a href="https://www.facebook.com/rosiWangFlag" class="iconfont icon-cion15"></a>
-        <p>粤ICP备17036548号</p>
-        <p>Copyright @ 2017 Powered by Vue. Designed by me | <router-link :to="{name: 'login'}" tag="span" class="login">站长登录</router-link></p>
+        <p>粤ICP备18067845号</p>
+        <p>Copyright @ 2018 Powered by Vue. Designed by me | <router-link :to="{name: 'login'}" tag="span" class="login">站长登录</router-link></p>
     </div>
 </template>
 

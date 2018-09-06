@@ -37,7 +37,7 @@ export default {
         tip () {
             if (this.picked === 'title') return '请输入标题的部分内容'
             if (this.picked === 'tags') return '请输入完整的标签，多个标签空格隔开'
-            if (this.picked === 'date') return '检索格式： 2017-04-01'
+            if (this.picked === 'date') return '检索格式： 2018-04-01'
         }
     },
     methods: {
