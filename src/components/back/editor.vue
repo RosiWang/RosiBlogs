@@ -230,6 +230,7 @@ export default {
     }
 }
 .publish {
+    margin-top: 24px;
     width: 6.25rem;
     position: fixed;
     left: 1rem;
@@ -238,6 +239,7 @@ export default {
     color: #000;
 }
 .draft {
+  margin-top: 24px;
     width: 6.25rem;
     position: fixed;
     left: 1rem;
